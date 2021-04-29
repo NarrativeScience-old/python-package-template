@@ -50,7 +50,7 @@ repos:
 
       - id: flake8
         name: Lint Python (flake8)
-        entry: flake8 --config pypants/.flake8
+        entry: flake8 --config .flake8
         language: python
         types: [file, python]
         additional_dependencies:

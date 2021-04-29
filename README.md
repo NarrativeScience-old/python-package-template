@@ -19,7 +19,7 @@ Table of Contents:
 my-package-name requires Python 3.6 or above.
 
 ```bash
-pip install my-package-name
+pip install mypackagename
 ```
 
 ## Guide
@@ -31,12 +31,14 @@ pip install my-package-name
 To develop my-package-name, install dependencies and enable the pre-commit hook:
 
 ```bash
-pip install pre-commit tox
+pip install pre-commit poetry
+poetry install
 pre-commit install
 ```
 
 To run tests:
 
 ```bash
-tox
+poetry shell
+pytest
 ```
