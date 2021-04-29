@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "mypackagename"
 version = "0.1.0"
-description = "CLI for working with Python packages and BUILD files in a Pants monorepo"
+description = "My package does cool stuff"
 authors = ["Your Name <person@narrativescience.com>"]
 license = "BSD-3-Clause"
 readme = "README.md"
