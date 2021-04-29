@@ -2,7 +2,7 @@
 
 import unittest
 
-from my_package_name.example import foo
+from mypackagename.example import foo
 
 
 class ExampleTests(unittest.TestCase):

@@ -1,26 +1,20 @@
-[build-system]
-requires = ["flit_core >=2,<3"]
-build-backend = "flit_core.buildapi"
-
-[tool.flit.metadata]
-module = "my_package_name"
-author = "Jerry Seinfeld"
-author-email = "jseinfeld@narrativescience.com"
-home-page = "https://github.com/NarrativeScience/my-package-name"
+[tool.poetry]
+name = "mypackagename"
+version = "0.1.0"
+description = "My package does cool stuff"
+authors = ["Your Name <person@narrativescience.com>"]
 license = "BSD-3-Clause"
-description-file = "README.md"
-requires = [
-    # Requirements here, e.g. "backoff>=1.8.0,<2",
-]
-classifiers = [
-    "Intended Audience :: Developers",
-    "License :: OSI Approved :: BSD License",
-    "Programming Language :: Python :: 3",
-    "Topic :: Software Development :: Libraries :: Python Modules",
-]
-requires-python = ">=3.6,<4"
-keywords = "comma,separated,keywords"
+readme = "README.md"
+homepage = "https://github.com/NarrativeScience/my-package-name"
+repository = "https://github.com/NarrativeScience/my-package-name"
 
-[tool.flit.sdist]
-include = ["LICENSE.md"]
-exclude = ["tests/"]
+[tool.poetry.dependencies]
+python = "^3.6.5"
+
+[tool.poetry.dev-dependencies]
+pre-commit = "^2.10.1"
+pytest = "^6.2.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
