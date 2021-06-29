@@ -5,8 +5,8 @@ description = "My package does cool stuff"
 authors = ["Your Name <person@narrativescience.com>"]
 license = "BSD-3-Clause"
 readme = "README.md"
-homepage = "https://github.com/NarrativeScience/my-package-name"
-repository = "https://github.com/NarrativeScience/my-package-name"
+homepage = "https://github.com/NarrativeScience/mypackagename"
+repository = "https://github.com/NarrativeScience/mypackagename"
 
 [tool.poetry.dependencies]
 python = "^3.6.5"

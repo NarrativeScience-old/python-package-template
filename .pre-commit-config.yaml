@@ -27,6 +27,13 @@ repos:
 
   - repo: local
     hooks:
+      - id: codespell
+        name: Spell-check Python files (codespell)
+        entry: codespell
+        language: python
+        types: [file, python]
+        additional_dependencies: [codespell==2.0.0]
+
       - id: isort
         name: Sort Python imports (isort)
         entry: isort
@@ -46,7 +53,7 @@ repos:
         entry: pydocstyle
         language: python
         types: [file, python]
-        additional_dependencies: [pydocstyle==4.0.1]
+        additional_dependencies: [pydocstyle==5.0.2]
 
       - id: flake8
         name: Lint Python (flake8)
